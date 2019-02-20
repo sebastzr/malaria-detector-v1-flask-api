@@ -10,7 +10,7 @@ UPLOAD_FOLDER = os.path.basename('uploads')
 ALLOWED_EXTENSIONS = set(['jpg', 'jpeg', 'png'])
 
 app = Flask(__name__)
-#CORS(app)
+CORS(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 results = ""
 
@@ -84,4 +84,4 @@ def hello():
     return hello
     
 if __name__ == '__main__':
-    app.run(debug==True)
+    app.run(debug=True)

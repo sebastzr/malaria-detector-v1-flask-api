@@ -29,3 +29,4 @@ termcolor==1.1.0
 typed-ast==1.2.0
 Werkzeug==0.14.1
 wrapt==1.11.1
+flask-cors==3.0.7
